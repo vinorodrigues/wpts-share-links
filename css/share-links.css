@@ -1,0 +1,74 @@
+
+.share-links {
+	padding: 0.5em 0;
+	margin: 0.5em 0;
+	display: block;
+}
+
+.share-links .share-label,
+.share-links .share-print,
+.share-links .share-email,
+.share-links .share-facebook,
+.share-links .share-googleplus,
+.share-links .share-twitter,
+.share-links .share-linkedin,
+.share-links .share-digg {
+	display: inline-block;
+	margin-right: 1em;
+	vertical-align: middle;
+	line-height: 25px;
+	height: 25px;
+}
+
+.share-links a.print-button,
+.share-links a.email-button {
+	background: #EEE;
+	color: #333;
+	padding: 0 5px;
+	margin: 0;
+	text-decoration: none;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+	font: 10px sans-serif;
+
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+
+	display: block;
+	overflow: hidden;
+	position: relative;
+	top: 0;
+	height: 18px;
+	line-height: 18px;
+
+	cursor: pointer;
+	outline: none;
+	text-decoration: none;
+
+	border: 1px solid #CCC;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.share-links a.print-button:hover,
+.share-links a.print-button:focus,
+.share-links a.email-button:hover,
+.share-links a.email-button:focus {
+	border: 1px solid #BBB;
+	background: #DDD;
+}
+
+.share-links a.print-button:active,
+.share-links a.email-button:active {
+	border: 1px solid #AAA;
+	background: #CCC;
+	color: #111;
+}
+
+@media print {
+	.share-links, .share-links * {
+		display: none;
+	}
+}
