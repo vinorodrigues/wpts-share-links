@@ -1,0 +1,115 @@
+
+.share-links {
+	padding: 1em 1em;
+	padding-bottom: 0.5em;
+	margin: 1em 0 ;
+	display: block;
+	box-sizing: content-box;
+
+	.share-lbl,
+	.share-print,
+	.share-email,
+	.share-facebook,
+	.share-googleplus,
+	.share-twitter,
+	.share-linkedin,
+	.share-digg {
+		display: inline-block;
+		height: 25px;
+		margin-right: 0.5em;
+		padding-bottom: 0.5em;
+	}
+
+	[class^="share-"]:last-child {
+		margin-right: 0;
+	}
+
+	.share-lbl {
+		vertical-align: top !important;
+		font-size: 80%;
+		display: none;
+	}
+
+	.fb-like > span {
+		vertical-align: baseline !important;
+	}
+
+	a.btn {
+		background: #EEE;
+		color: #333;
+		padding: 0 5px;
+		margin: 0;
+		text-decoration: none;
+		text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+		font-name: sans-serif;
+		line-height: 20px;
+		font-weight: bold;
+		font-size: 11px;
+		-webkit-font-smoothing: antialiased;
+
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-o-user-select: none;
+		user-select: none;
+
+		display: block;
+		overflow: hidden;
+		position: relative;
+		top: 0;
+		height: 18px;
+		line-height: 18px;
+
+		cursor: pointer;
+		outline: none;
+		text-decoration: none;
+
+		border: 1px solid #CCC;
+		-moz-border-radius: 3px;
+		-webkit-border-radius: 3px;
+		border-radius: 3px;
+	}
+
+	a.btn:hover,
+	a.btn:focus {
+		border: 1px solid #BBB;
+		background: #DDD;
+	}
+
+	a.btn:active {
+		border: 1px solid #AAA;
+		background: #CCC;
+		color: #111;
+	}
+
+	$btn-email: #52bcd6;
+	$btn-print: #7c3f7c;
+
+	.btn-email {
+		border-color: $btn-email !important;
+		background-color: $btn-email !important;
+		color: #fff !important;
+
+		&:hover, &:focus {
+			background-color: darken($btn-email, 10%) !important;
+		}
+	}
+
+	.btn-print {
+		border-color: $btn-print !important;
+		background-color: $btn-print !important;
+		color: #fff !important;
+
+		&:hover, &:focus {
+			background-color: darken($btn-print, 10%) !important;
+		}
+	}
+
+}
+
+
+@media print {
+	.share-links,
+	.share-links * {
+		display: none;
+	}
+}
