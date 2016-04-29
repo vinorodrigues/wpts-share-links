@@ -335,9 +335,8 @@ add_filter( 'the_excerpt', 'ts_share_links_content', 77 );
  *
  */
 function ts_share_links_wp_head() {
-	wp_enqueue_style( 'ts-share-links', SHARE_LINKS_URL . '/css/share-links' .
-		((defined('SCRIPT_DEBUG') && SCRIPT_DEBUG) ? '' : '.min') .
-		'.css' );
+	wp_enqueue_style( 'ts-share-links', SHARE_LINKS_URL .
+		'/css/share-links.css' );
 }
 
 add_action( 'wp_enqueue_scripts', 'ts_share_links_wp_head' );
